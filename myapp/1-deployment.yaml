@@ -5,19 +5,19 @@ metadata:
   name: demo
   namespace: prod
   labels:
-    app: demo-server
+    app: nginx-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo-server
+      app: nginx-server
   template:
     metadata:
       labels:
-        app: demo-server
+        app: nginx-server
   spec:
     containers:
-      - name: demo-server
-        image: salihbozkaya1001/demo-server
+      - name: nginx-server
+        image: salihbozkaya1001/nginx
         ports:
           - containerPort: 80
