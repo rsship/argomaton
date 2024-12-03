@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: demo
+  namespace: prod
+  labels:
+    app: demo-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-server
+  template:
+    metadata:
+      labels:
+        app: demo-server
+  spec:
+    containers:
+      - name: demo-server
+        image: salihbozkaya1001/demo-server
+        ports:
+          - containerPort: 80
