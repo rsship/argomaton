@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/rsship/argomaton.git 
     targetRevision: HEAD  
-    path: envs/staging/apps
+    path: envs2/staging/myapp
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
