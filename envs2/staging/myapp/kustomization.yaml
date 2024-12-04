@@ -1,0 +1,7 @@
+---
+namespace: staging-super
+images:
+  - name: salihbozkaya1001/nginx
+    newTag: 0.0.3
+resources:
+  ../../../myapp-base
