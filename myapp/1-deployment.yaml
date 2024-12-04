@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: aputra/nginx:v0.1.3
+          image: salihbozkaya1001/nginx:0.0.1
           ports:
             - containerPort: 80
